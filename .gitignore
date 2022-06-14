@@ -1,0 +1,6 @@
+# folders
+.aws-sam
+node_modules
+
+#files
+samconfig.toml

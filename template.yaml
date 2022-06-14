@@ -1,0 +1,16 @@
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  TestLambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: test
+      PackageType: Image
+      FunctionUrlConfig:
+        AuthType: NONE
+        Cors:
+          AllowOrigins: ["*"]
+
+    Metadata:
+      Dockerfile: Dockerfile
+      DockerContext: ./
